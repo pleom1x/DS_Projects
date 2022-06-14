@@ -9,8 +9,8 @@ color_dict={0:(0,0,255),1:(0,255,0)}
 size = 4
 webcam = cv2.VideoCapture(cv2.CAP_V4L) #Use camera 0
 
-# # We load the xml file
-# classifier = cv2.CascadeClassifier('/home/dgavrilov/.local/lib/python3.6/site-packages/cv2/data/haarcascade_frontalface_default.xml')
+# We load the xml file
+classifier = cv2.CascadeClassifier('/home/dgavrilov/.local/lib/python3.6/site-packages/cv2/data/haarcascade_frontalface_default.xml')
 
 # while True:
 #     (rval, im) = webcam.read()
