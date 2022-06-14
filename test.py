@@ -1,3 +1,4 @@
+import os
 import cv2
 import numpy as np
 from keras.models import load_model
@@ -10,7 +11,7 @@ size = 4
 webcam = cv2.VideoCapture(cv2.CAP_V4L) #Use camera 0
 
 # We load the xml file
-classifier = cv2.CascadeClassifier('/home/dgavrilov/.local/lib/python3.6/site-packages/cv2/data/haarcascade_frontalface_default.xml')
+classifier = cv2.CascadeClassifier(os.path.dirname(cv2.__file__) + "/data/haarcascade_frontalface_default.xml")
 
 # while True:
 #     (rval, im) = webcam.read()
